@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Display "To infinity and beyond" considerably with
+#+ A sleep 2 in between EACH iteration.
+#   Display "I am invincible!!!" in between EACH iteration.
+
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+  trap 'echo "I am invincible!!!"' SIGTERM 
+done
